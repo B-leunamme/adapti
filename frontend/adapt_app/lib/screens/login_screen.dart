@@ -1,4 +1,5 @@
 import 'package:adapt_app/screens/register_screen.dart';
+import 'package:adapt_app/screens/forgot_password.dart';
 import 'package:adapt_app/widgets/input_field.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class LoginScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 45),
         child: Column(
           children: [
-            const SizedBox(height: 20),
+            const SizedBox(height: 30),
             Image.asset("assets/images/p2.png"),
             const Text(
               "Login",
@@ -27,31 +28,23 @@ class LoginScreen extends StatelessWidget {
             const Text(
               "Please log in to our app!",
               style: TextStyle(
-                fontSize: 22,
+                fontSize: 18,
                 fontWeight: FontWeight.w500,
                 color: Color.fromARGB(158, 0, 0, 0),
               ),
             ),
             
-            const SizedBox(height: 20),
+            const SizedBox(height: 15),
             const InputField(label: "Enter your email"),
-            const SizedBox(height: 20),
+            const SizedBox(height: 15),
             const InputField(label: "Enter your password"),
-            const SizedBox(height: 20),
+            const SizedBox(height: 15),
             
-            const Text(
-              "Forget Password",
-              style: TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.w400,
-                color: Color(0xFF0E6565),
-              ),
-            ),
-            const SizedBox(height: 10),
+
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF30A6AE),
+                backgroundColor: Color.fromARGB(255, 66, 53, 247),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8)),
                 minimumSize: const Size.fromHeight(52),
@@ -65,31 +58,15 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 15),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Color.fromARGB(255, 82, 48, 174),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8)),
-                    
-                minimumSize: const Size.fromHeight(52),
-              ),
-              child: const Text(
-                "Forgot Password",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xFFDEEAE8),
-                ),
-              ),
-            ),
-            const SizedBox(height: 30),
+
+            const SizedBox(height: 20),
+
+
             Text.rich(
               TextSpan(
                 text: "Don't have an account ? ",
                 style: const TextStyle(
-                  fontSize: 13,
+                  fontSize: 15,
                   fontWeight: FontWeight.w400,
                   color: Colors.black,
                 ),
@@ -104,9 +81,9 @@ class LoginScreen extends StatelessWidget {
                       child: const Text(
                         "Sign up",
                         style: TextStyle(
-                          fontSize: 13,
-                          fontWeight: FontWeight.w400,
-                          color: Color(0xFF009A9A),
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromARGB(255, 66, 53, 247),
                         ),
                       ),
                     ),
@@ -114,7 +91,34 @@ class LoginScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 90),
+            const SizedBox(height: 20),
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const ForgotPassword(),
+                  ),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 231, 230, 248),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8)),
+                    
+                minimumSize: const Size.fromHeight(52),
+              ),
+              child: const Text(
+                "Forgot Password",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                  color: Color.fromARGB(255, 66, 53, 247),
+                ),
+              ),
+            ),
+            
+            
           ],
         ),
       ),

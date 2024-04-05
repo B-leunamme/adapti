@@ -31,19 +31,19 @@ class RegisterScreen extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
             const InputField(label: "Enter your full name"),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             const InputField(label: "Enter your email id"),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             const InputField(label: "Enter Password"),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             const InputField(label: "Enter confirm password"),
-            const SizedBox(height: 24),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color.fromARGB(255, 89, 27, 202),
+                backgroundColor: Color.fromARGB(255, 66, 53, 247),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8)),
                 minimumSize: const Size.fromHeight(52),
@@ -62,7 +62,7 @@ class RegisterScreen extends StatelessWidget {
               TextSpan(
                 text: "Already have an account ? ",
                 style: const TextStyle(
-                  fontSize: 13,
+                  fontSize: 15,
                   fontWeight: FontWeight.w400,
                   color: Colors.black,
                 ),
@@ -75,11 +75,11 @@ class RegisterScreen extends StatelessWidget {
                         ),
                       ),
                       child: const Text(
-                        "Sign in",
+                        "Log in",
                         style: TextStyle(
-                          fontSize: 13,
-                          fontWeight: FontWeight.w400,
-                          color: Color.fromARGB(255, 89, 27, 202),
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromARGB(255, 66, 53, 247),
                         ),
                       ),
                     ),

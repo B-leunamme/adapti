@@ -38,7 +38,7 @@ class ForgotPassword extends StatelessWidget {
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color.fromARGB(255, 89, 27, 202),
+                backgroundColor: Color.fromARGB(255, 29, 66, 231),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8)),
                 minimumSize: const Size.fromHeight(52),
@@ -73,11 +73,11 @@ class ForgotPassword extends StatelessWidget {
                         ),
                       ),
                       child: const Text(
-                        "Sign in",
+                        "Log in",
                         style: TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.w400,
-                          color: Color.fromARGB(255, 89, 27, 202),
+                          color: Color.fromARGB(255, 29, 66, 231),
                         ),
                       ),
                     ),
