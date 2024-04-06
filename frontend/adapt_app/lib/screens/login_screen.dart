@@ -14,8 +14,8 @@ class LoginScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 45),
         child: Column(
           children: [
-            const SizedBox(height: 30),
-            Image.asset("assets/images/p2.png"),
+            const SizedBox(height: 200),
+            //Image.asset("assets/images/p2.png"),
             const Text(
               "Login",
               style: TextStyle(
